@@ -4,7 +4,7 @@ import { urlFor } from '../lib/client';
 
 
 const HeroBanner = ({heroBanner}) => {
-  return (
+  return ( 
     <div className='hero-banner-container'>
         <div>
             <p children='beats-solo'>{heroBanner.smallText}</p>

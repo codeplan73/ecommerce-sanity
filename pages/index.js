@@ -1,6 +1,6 @@
 import React from 'react'
-import { Product, FooterBanner, Footer, Navbar, Layout, Cart, HeroBanner } from '../components'
 import { client } from '../lib/client'
+import { Product, FooterBanner, Footer, Navbar, Layout, Cart, HeroBanner } from '../components'
 
 const Home = ({ products, bannerData }) => {
   return (
@@ -12,7 +12,7 @@ const Home = ({ products, bannerData }) => {
       </div>
 
       <div className='products-container'>
-        {/* {products.map((product) =>  (product.name))} */}
+        {products?.map((product) =>  <Product key={product._id} product={product} />)}
       </div>
 
       <FooterBanner />
